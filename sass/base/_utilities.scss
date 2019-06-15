@@ -2,14 +2,26 @@
   text-align: center;
 }
 
+.util-margin-top-large {
+  margin-top: $margin-large;
+}
+
+.util-margin-top-medium {
+  margin-top: $margin-medium;
+}
+
+.util-margin-top-small {
+  margin-top: $margin-small;
+}
+
 .util-margin-bottom-large {
-  margin-bottom: 8rem;
+  margin-bottom: $margin-large;
 }
 
 .util-margin-bottom-medium {
-  margin-bottom: 4rem;
+  margin-bottom: $margin-medium;
 }
 
 .util-margin-bottom-small {
-  margin-bottom: 2rem;
+  margin-bottom: $margin-small;
 }
