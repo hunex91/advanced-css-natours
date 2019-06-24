@@ -4,7 +4,7 @@
   padding: 6rem;
   padding-left: 9rem;
   box-shadow: 0 3rem 6rem rgba($color-black, .1);
-  background-color: $color-white;
+  background-color: rgba($color-white, .6);
   border-radius: 3px;
   font-size: $font-size-default;
   transform: skewX(-12deg);
@@ -14,10 +14,10 @@
   }
 
   &__shape {
+    position: relative;
     width: 15rem;
     height: 15rem;
     float: left;
-    background-color: orange;
     -webkit-shape-outside: circle(50% at 50% 50%);
     shape-outside: circle(50% at 50% 50%);
     clip-path: circle(50% at 50% 50%);
@@ -26,5 +26,32 @@
 
   &__image {
     height: 100%;
+    transition: all .5s ease;
+    transform: scale(1.4);
+    backface-visibility: hidden;
+  }
+
+  &__caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 20%);
+    color: $color-white;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.7rem;
+    opacity: 0;
+    transition: all .5s ease;
+    backface-visibility: hidden;
+  }
+
+  &:hover &__caption {
+    transform: translate(-50%, -50%);
+    opacity: 1;
+  }
+
+  &:hover &__image {
+    transform: scale(1);
+    filter: blur(3px) brightness(80%);
   }
 }
