@@ -1,3 +1,20 @@
+/*
+Media queries:
+FROM      TO        UNIT      DESCRIPTION
+-----------------------------------------------
+0         600       px        Phone
+600       900       px        Tablet portrait
+900       1200      px        Tablet landscape
+1200      1800      px        Desktop (default)
+1800                px        Large desktop
+-----------------------------------------------
+
+Values for breakpoint: 
+  - phone
+  - tablet-port
+  - tablet-land
+  - desktop-large
+*/
 @keyframes moveInLeft {
   0% {
     opacity: 0;
@@ -35,6 +52,18 @@
 
 html {
   font-size: 62.5%; }
+  @media (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
+  @media (max-width: 75em) {
+    html {
+      font-size: 62.5%; } }
+  @media (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media (max-width: 37.5em) {
+    html {
+      font-size: 50%; } }
 
 body {
   padding: 3rem;
