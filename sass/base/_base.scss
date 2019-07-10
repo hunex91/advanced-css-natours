@@ -30,4 +30,8 @@ html {
 body {
   padding: 3rem;
   box-sizing: border-box;
+
+  @include responsive(tablet-port) {
+    padding: 0;
+  }
 }

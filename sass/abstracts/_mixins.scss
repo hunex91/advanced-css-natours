@@ -29,7 +29,10 @@ Values for breakpoint:
   - tablet-port
   - tablet-land
   - desktop-large
+
+Order of the media queries: base, typography -> layout, grid -> pages -> components
 */
+
 @mixin responsive($breakpoint) {
   @if $breakpoint == phone {
     @media (max-width: 37.5em) { @content };
