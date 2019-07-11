@@ -21,7 +21,7 @@
     -webkit-background-clip: text;
   }
 
-  &_text {
-
+  @include responsive(tablet-port) {
+    margin-bottom: 0;
   }
 }
