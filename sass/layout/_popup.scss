@@ -20,11 +20,19 @@
     opacity: 0;
     transform: translate(-50%, -50%) scale(.25);
     transition: all .5s .1s;
+
+    @include responsive(tablet-land) {
+      width: 90%;
+    }
   }
 
   &__left {
     width: 33.333333%;
     display: table-cell;
+
+    @include responsive(tablet-land) {
+      display: none;
+    }
   }
 
   &__right {
@@ -33,6 +41,11 @@
     vertical-align: middle;
     padding: 3rem 5rem;
     background-color: $color-white;
+
+    @include responsive(tablet-land) {
+      width: 100%;
+      padding: 2rem 3rem;
+    }
   }
 
   &__image {
@@ -46,6 +59,10 @@
     column-count: 2;
     column-gap: 4rem;
     column-rule: 1px solid $color-grey-light-2;
+
+    @include responsive(tablet-land) {
+      column-count: 1;
+    }
   }
 
   &:target {
