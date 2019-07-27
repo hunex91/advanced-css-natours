@@ -9,9 +9,29 @@
 html {
   // Defines what 1rem is
   font-size: 62.5%;
+
+  @include responsive(desktop-large) {
+    font-size: 75%;
+  }
+
+  @include responsive(tablet-land) {
+    font-size: 62.5%;
+  }
+
+  @include responsive(tablet-port) {
+    font-size: 50%;
+  }
+
+  @include responsive(phone) {
+    font-size: 50%;
+  }
 }
 
 body {
   padding: 3rem;
   box-sizing: border-box;
+
+  @include responsive(tablet-port) {
+    padding: 0;
+  }
 }
