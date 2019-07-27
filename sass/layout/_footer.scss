@@ -6,6 +6,10 @@
   &__logo-box {
     text-align: center;
     margin-bottom: 8rem;
+
+    @include responsive(tablet-port) {
+      margin-bottom: 8rem;
+    }
   }
 
   &__logo {
@@ -17,6 +21,11 @@
     border-top: 1px solid $color-grey-dark-1;
     padding-top: 2rem;
     float: right;
+
+    @include responsive(tablet-port) {
+      width: 100%;
+      text-align: center;
+    }
   }
 
   &__list {
@@ -54,5 +63,14 @@
     color: $color-grey-light-1;
     border-top: 1px solid $color-grey-dark-1;
     padding-top: 2rem;
+
+    @include responsive(tablet-port) {
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+  @include responsive(tablet-port) {
+    padding: 8rem 0;
   }
 }
