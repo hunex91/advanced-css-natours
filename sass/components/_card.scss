@@ -14,6 +14,7 @@
     transition: all .8s ease;
     top: 0;
     left: 0;
+    -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
 
     &--front {
